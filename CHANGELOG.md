@@ -10,3 +10,8 @@ All notable changes to the "SidGautamScript-DevTools" extension will be document
 ## [1.0.5]
 
 - Updated the Extension Information in the extension tab
+
+
+## [1.0.6]
+
+- Added some basic installation instructions to the README

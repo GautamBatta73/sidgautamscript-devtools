@@ -13,6 +13,10 @@ This Extension provides basic syntax highlighting for SidGautamScript:
 
 SidGautamScript is written in .sidg files.
 
+## How to Install
+
+To start using the extension with VS Code, copy it into your '\<user home\>/.vscode/extensions' folder and restart Code.
+
 ## For more information
 
 * [SidGautamScript Documentation](https://github.com/GautamBatta73/SidGautam/blob/main/Versions/Prog_Language/Documentation/readme.md)

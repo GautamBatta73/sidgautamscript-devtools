@@ -3,7 +3,7 @@
   "displayName": "SidGautamScript DevTools",
   "icon": "./assets/icon.png",
   "description": "A VS Code extension for developing with SidGautamScript",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "engines": {
     "vscode": "^1.108.1"
   },
