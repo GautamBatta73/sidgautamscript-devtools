@@ -1,13 +1,13 @@
 # SidGautamScript-DevTools README
 
-This is the README for "SidGautamScript-DevTools" extension of Visual Studio Code.
+This is the README for the "SidGautamScript-DevTools" extension of Visual Studio Code.
 
 ## Features
 
 This Extension provides basic syntax highlighting for SidGautamScript:
 
 
-![Code Snippet](.\assets\example1.png)
+![Code Snippet](./assets/example1.png)
 
 <br>
 
