@@ -1,0 +1,52 @@
+{
+  "name": "sidgautamscript-devtools",
+  "displayName": "SidGautamScript DevTools",
+  "description": "A VS Code extension for developing with SidGautamScript",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.108.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sgscript",
+        "aliases": [
+          "SidGautamScript",
+          "sgscript"
+        ],
+        "extensions": [
+          ".sidg"
+        ],
+        "icon": {
+          "light": "./assets/source-icon-light.svg",
+          "dark": "./assets/source-icon.svg"
+        },
+        "configuration": "./language-configuration.json"        
+      },
+      {
+        "id": "sgscript-compiled",
+        "aliases": [
+          "SidGautamScript-Compiled",
+          "sgscript-compiled"
+        ],
+        "extensions": [
+          ".sidgc"
+        ],
+        "icon": {
+          "light": "./assets/compiled-icon-light.svg",
+          "dark": "./assets/compiled-icon.svg"
+        }       
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sgscript",
+        "scopeName": "source.sidg",
+        "path": "./syntaxes/sgscript.tmLanguage.json"
+      }
+    ]
+  }
+}
