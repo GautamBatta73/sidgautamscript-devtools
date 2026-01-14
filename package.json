@@ -1,8 +1,9 @@
 {
   "name": "sidgautamscript-devtools",
   "displayName": "SidGautamScript DevTools",
+  "icon": "./assets/icon.png",
   "description": "A VS Code extension for developing with SidGautamScript",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "engines": {
     "vscode": "^1.108.1"
   },

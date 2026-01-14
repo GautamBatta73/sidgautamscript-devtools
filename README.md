@@ -7,9 +7,9 @@ This is the README for the "SidGautamScript-DevTools" extension of Visual Studio
 This Extension provides basic syntax highlighting for SidGautamScript:
 
 
-![Code Snippet](./assets/example1.png)
+![Code Snippet](https://raw.githubusercontent.com/GautamBatta73/sidgautamscript-devtools/refs/heads/master/assets/example1.png)
 
-<br>
+![Language Selection in VS Code](https://raw.githubusercontent.com/GautamBatta73/sidgautamscript-devtools/refs/heads/master/assets/example2.png)
 
 SidGautamScript is written in .sidg files.
 
