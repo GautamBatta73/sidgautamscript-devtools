@@ -15,3 +15,9 @@ All notable changes to the "SidGautamScript-DevTools" extension will be document
 ## [1.0.6]
 
 - Added some basic installation instructions to the README
+
+
+## [1.1.0]
+
+- Added auto closing brackets, and quotes.
+- Added indentation support.
