@@ -21,3 +21,10 @@ All notable changes to the "SidGautamScript-DevTools" extension will be document
 
 - Added auto closing brackets, and quotes.
 - Added indentation support.
+
+
+## [1.1.5]
+
+- Changed 'this' colour to be more accurate.
+- Added special colour for object 'stringify' method.
+- Added my name as Author and Publisher.

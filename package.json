@@ -1,9 +1,16 @@
 {
   "name": "sidgautamscript-devtools",
   "displayName": "SidGautamScript DevTools",
+  "author": "Gautam Batta",
+  "publisher": "Gautam Batta",
   "icon": "./assets/icon.png",
   "description": "A VS Code extension for developing with SidGautamScript",
-  "version": "1.1.0",
+  "version": "1.1.5",
+  "keywords": [
+    "sidg",
+    "sgscript",
+    "sidgautamscript"
+  ],
   "engines": {
     "vscode": "^1.108.1"
   },
@@ -25,7 +32,7 @@
           "light": "./assets/source-icon-light.svg",
           "dark": "./assets/source-icon.svg"
         },
-        "configuration": "./language-configuration.json"        
+        "configuration": "./language-configuration.json"
       },
       {
         "id": "sgscript-compiled",
@@ -39,7 +46,7 @@
         "icon": {
           "light": "./assets/compiled-icon-light.svg",
           "dark": "./assets/compiled-icon.svg"
-        }       
+        }
       }
     ],
     "grammars": [
