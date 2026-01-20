@@ -5,17 +5,24 @@
   "publisher": "Gautam Batta",
   "icon": "./assets/icon.png",
   "description": "A VS Code extension for developing with SidGautamScript",
-  "version": "1.1.5",
+  "version": "1.2.0",
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage"
+  ],
   "keywords": [
     "sidg",
     "sgscript",
-    "sidgautamscript"
+    "sidgautamscript",
+    "devtools",
+    "formatters"
   ],
   "engines": {
     "vscode": "^1.108.1"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Formatters"
   ],
   "contributes": {
     "languages": [
@@ -54,6 +61,17 @@
         "language": "sgscript",
         "scopeName": "source.sidg",
         "path": "./syntaxes/sgscript.tmLanguage.json"
+      }
+    ],
+    "formatters": [
+      {
+        "language": "sgscript",
+        "scheme": "file",
+        "documentSelector": [
+          {
+            "language": "sgscript"
+          }
+        ]
       }
     ]
   }

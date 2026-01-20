@@ -28,3 +28,8 @@ All notable changes to the "SidGautamScript-DevTools" extension will be document
 - Changed 'this' colour to be more accurate.
 - Added special colour for object 'stringify' method.
 - Added my name as Author and Publisher.
+
+
+## [1.2.0]
+
+- Added Formatter for sidg files.
