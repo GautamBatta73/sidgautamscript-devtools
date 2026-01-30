@@ -159,7 +159,7 @@
 			"patterns": [
 				{
 					"name": "constant.language.sgscript",
-					"match": "\\b(NULL|true|false|this)\\b"
+					"match": "\\b(NULL|true|false|this|__ARGS)\\b"
 				}
 			]
 		},
@@ -167,7 +167,7 @@
 			"patterns": [
 				{
 					"name": "support.type.sgscript",
-					"match": "\\b(print|exit|str|int|double|trim|errPrint|len|isEmpty|dataType|__addToPrototype|stringify)\\b"
+					"match": "\\b(print|exit|str|int|double|trim|errPrint|len|isEmpty|dataType|__addToPrototype|stringify|Error|catchError)\\b"
 				}
 			]
 		},

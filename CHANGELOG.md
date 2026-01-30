@@ -33,3 +33,8 @@ All notable changes to the "SidGautamScript-DevTools" extension will be document
 ## [1.2.0]
 
 - Added Formatter for sidg files.
+
+
+## [1.2.1]
+
+- Added Syntax Highlighting for Command-Line Args, Error Throwing, and Error Catching.
