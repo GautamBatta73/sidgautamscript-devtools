@@ -1,0 +1,114 @@
+{
+	"Print Statement": {
+		"prefix": "print()",
+		"body": [
+			"print(\"$1\");",
+			"$0"
+		],
+		"description": "Print output to console"
+	},
+	"Error Print Statement": {
+		"prefix": "errPrint()",
+		"body": [
+			"errPrint(\"$1\");",
+			"$0"
+		],
+		"description": "Print error to console"
+	},
+	"Exit Statement": {
+		"prefix": "exit()",
+		"body": [
+			"exit();",
+			"$0"
+		],
+		"description": "Exit the program, and end its execution"
+	},
+	"Until Loop": {
+		"prefix": "until ()",
+		"body": [
+			"until (var ${1:i} = 0, ${1:i} < len(${2:array}), ${1:i} = i + 1) {",
+			"\tfinal ${3:element} = ${2:array}[${1:i}];",
+			"\t$0",
+			"}"
+		],
+		"description": "A custom until loop with index and element"
+	},
+	"Function Declaration": {
+		"prefix": "func ()",
+		"body": [
+			"func ${1:name}(${2:params}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "Declares a function with params"
+	},
+	"Class Declaration": {
+		"prefix": "class ()",
+		"body": [
+			"final ${1:name} = (${2:params}) -> {",
+			"\tvar _props = {",
+			"\t\t${3:newProp}: ${2:params}",
+			"\t};",
+			"",
+			"\tpass {",
+			"\t\t${4:getProp}: () -> _props.${3:newProp}",
+			"\t};",
+			"};",
+			"$0"
+		],
+		"description": "Declares a class with params"
+	},
+	"Unless Statement": {
+		"prefix": "unless ()",
+		"body": [
+			"unless (${1:condition}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A custom unless statement"
+	},
+	"Unless-orElse Statement": {
+		"prefix": "unless-orElse ()",
+		"body": [
+			"unless (${1:condition}) {",
+			"\t$0",
+			"} orElse {",
+			"\t$2",
+			"}"
+		],
+		"description": "A custom unless-orElse statement"
+	},
+	"Import Statement": {
+		"prefix": "import library/module",
+		"body": [
+			"import \"$1\";",
+			"$0"
+		],
+		"description": "Imports libraries or modules from other .sidgc files"
+	},
+	"Lambda Function Expression": {
+		"prefix": "lambda arrow expression",
+		"body": [
+			"(${1:params}) -> {",
+			"\t$0",
+			"}"
+		],
+		"description": "Creates an anonymous lambda function"
+	},
+	"Declare Variable": {
+		"prefix": "var",
+		"body": [
+			"var ${1:name} = ${2:NULL};",
+			"$0"
+		],
+		"description": "Declares a variable"
+	},
+	"Declare Constant": {
+		"prefix": "final",
+		"body": [
+			"final ${1:NAME} = ${2:NULL};",
+			"$0"
+		],
+		"description": "Declares a constant"
+	}
+}

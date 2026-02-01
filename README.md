@@ -4,7 +4,7 @@ This is the README for the "SidGautamScript-DevTools" extension of Visual Studio
 
 ## Features
 
-This Extension provides basic syntax highlighting and a code formatter for SidGautamScript:
+This Extension provides basic syntax highlighting, simple execution of files/code snippets, and a code formatter for SidGautamScript:
 
 
 ![Code Snippet](https://raw.githubusercontent.com/GautamBatta73/sidgautamscript-devtools/refs/heads/master/assets/example1.png)

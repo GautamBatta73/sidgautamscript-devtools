@@ -2,6 +2,7 @@
 
 All notable changes to the "SidGautamScript-DevTools" extension will be documented in this file.
 
+
 ## [1.0.0]
 
 - Initial release
@@ -38,3 +39,9 @@ All notable changes to the "SidGautamScript-DevTools" extension will be document
 ## [1.2.1]
 
 - Added Syntax Highlighting for Command-Line Args, Error Throwing, and Error Catching.
+
+
+## [1.2.5]
+
+- Added code snippets for simple code templating/scaffolding.
+- Added a button for executing SidGautamScript files/snippets.

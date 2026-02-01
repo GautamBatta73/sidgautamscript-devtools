@@ -5,7 +5,7 @@
   "publisher": "Gautam Batta",
   "icon": "./assets/icon.png",
   "description": "A VS Code extension for developing with SidGautamScript",
-  "version": "1.2.1",
+  "version": "1.2.5",
   "main": "./extension.js",
   "activationEvents": [
     "onLanguage"
@@ -15,14 +15,18 @@
     "sgscript",
     "sidgautamscript",
     "devtools",
-    "formatters"
+    "formatters",
+    "snippets",
+    "code runner"
   ],
   "engines": {
     "vscode": "^1.108.1"
   },
   "categories": [
     "Programming Languages",
-    "Formatters"
+    "Formatters",
+    "Snippets",
+    "Other"
   ],
   "contributes": {
     "languages": [
@@ -73,6 +77,88 @@
           }
         ]
       }
-    ]
+    ],
+    "snippets": [
+      {
+        "language": "sgscript",
+        "path": "./snippets/snippets.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "sidgautamscript.runFile",
+        "title": "Run SidGautamScript",
+        "icon": "$(run)"
+      },
+      {
+        "command": "sidgautamscript.runSelection",
+        "title": "Run SidGautamScript Selection",
+        "icon": "$(run-all)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "sidgautamscript.runFile",
+          "when": "resourceLangId == sgscript",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "sidgautamscript.runSelection",
+          "when": "resourceLangId == sgscript && editorHasSelection",
+          "group": "navigation"
+        },
+        {
+          "command": "sidgautamscript.runFile",
+          "when": "resourceLangId == sgscript",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "sidgautamscript.runFile",
+          "when": "resourceLangId == sgscript",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "SidGautamScript",
+      "properties": {
+        "sidgautamscript.compileCommand": {
+          "type": "string",
+          "default": "sgc",
+          "description": "Command used to compile SidGautamScript (.sidg -> .sidgc). Use full path if needed."
+        },
+        "sidgautamscript.compileArgs": {
+          "type": "string",
+          "default": "",
+          "description": "Additional arguments passed to the compile command. Use space-separated values."
+        },
+        "sidgautamscript.compileInTerminal": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, the compile command is echoed to the terminal for visibility (compile still runs headless to check success)."
+        },
+        "sidgautamscript.runCommand": {
+          "type": "string",
+          "default": "sg",
+          "description": "Command used to run compiled SidGautamScript files (.sidgc). Use full path if needed."
+        },
+        "sidgautamscript.runArgs": {
+          "type": "string",
+          "default": "",
+          "description": "Additional arguments passed to the run command. Use space-separated values."
+        },
+        "sidgautamscript.runInTerminal": {
+          "type": "boolean",
+          "default": true,
+          "description": "Run files in the integrated terminal (true) or capture output in the Output panel (false)."
+        }
+      }
+    }
   }
 }
