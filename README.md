@@ -2,6 +2,8 @@
 
 This is the README for the "SidGautamScript-DevTools" extension of Visual Studio Code.
 
+<a href="https://www.buymeacoffee.com/GautamBatta73" target="_blank"><img src="https://i.imgur.com/xPQdsF8.png" alt="Buy Me A Hot Chocolate" style="height: 47px !important;width: 200px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
 ## Features
 
 This Extension provides basic syntax highlighting, simple execution of files/code snippets, and a code formatter for SidGautamScript:

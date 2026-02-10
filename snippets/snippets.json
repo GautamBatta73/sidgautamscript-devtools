@@ -78,13 +78,22 @@
 		],
 		"description": "A custom unless-orElse statement"
 	},
+	"orElse Statement": {
+		"prefix": "orElse ()",
+		"body": [
+			"orElse {",
+			"\t$0",
+			"}"
+		],
+		"description": "A custom unless-orElse statement"
+	},
 	"Import Statement": {
-		"prefix": "import library/module",
+		"prefix": "import library/package",
 		"body": [
 			"import \"$1\";",
 			"$0"
 		],
-		"description": "Imports libraries or modules from other .sidgc files"
+		"description": "Imports code from other .sidgc files as libraries or packages"
 	},
 	"Lambda Function Expression": {
 		"prefix": "lambda arrow expression",
@@ -92,6 +101,23 @@
 			"(${1:params}) -> {",
 			"\t$0",
 			"}"
+		],
+		"description": "Creates an anonymous lambda function"
+	},
+	"Throw New Error": {
+		"prefix": "Error()",
+		"body": [
+			"Error(\"$1\");",
+			"$0"
+		],
+		"description": "Creates an anonymous lambda function"
+	},
+	"Catch Errors": {
+		"prefix": "catchError()",
+		"body": [
+			"catchError(() -> {",
+			"\t$0",
+			"});"
 		],
 		"description": "Creates an anonymous lambda function"
 	},

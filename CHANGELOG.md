@@ -45,3 +45,12 @@ All notable changes to the "SidGautamScript-DevTools" extension will be document
 
 - Added code snippets for simple code templating/scaffolding.
 - Added a button for executing SidGautamScript files/snippets.
+
+
+## [1.2.8]
+
+- Added Syntax Highlighting for Current Script Directory Constant.
+- Updated Import Snippet Description to Reflect Standardized Terms.
+- Update README Image to Look Neater.
+- Added code snippets for error throwing and catching.
+- Added 'Buy Me a Coffee' Link.

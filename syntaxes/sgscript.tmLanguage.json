@@ -159,7 +159,7 @@
 			"patterns": [
 				{
 					"name": "constant.language.sgscript",
-					"match": "\\b(NULL|true|false|this|__ARGS)\\b"
+					"match": "\\b(NULL|true|false|this|__ARGS|__SCRIPT_DIR)\\b"
 				}
 			]
 		},
