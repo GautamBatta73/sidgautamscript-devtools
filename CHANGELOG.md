@@ -54,3 +54,9 @@ All notable changes to the "SidGautamScript-DevTools" extension will be document
 - Update README Image to Look Neater.
 - Added code snippets for error throwing and catching.
 - Added 'Buy Me a Coffee' Link.
+
+## [1.2.9]
+
+- Added code snippet for though loop.
+- Updated until loop snippet to use new addition assignment operator.
+- Updated test1.sidg file to have new assignment operator examples.

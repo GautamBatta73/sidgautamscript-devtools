@@ -5,7 +5,7 @@
   "publisher": "Gautam Batta",
   "icon": "./assets/icon.png",
   "description": "A VS Code extension for developing with SidGautamScript",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "main": "./extension.js",
   "activationEvents": [
     "onLanguage"
