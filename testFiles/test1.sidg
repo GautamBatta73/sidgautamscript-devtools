@@ -22,7 +22,7 @@ print(!a && b == 3 || c < 10);
 
 x = 5; # inline comment
 a = b = c;
-x = x + 1;
+x += 1;
 print(x = 10);
 
 unless (x > 0) {
@@ -61,7 +61,7 @@ func testFunc () {
     print("test");
 }
 
-until(var i = 0, i < 10, i = i + 2) {
+until(var i = 0, i < 10, i += 2) {
     print("I Like Turtles!");
 }
 

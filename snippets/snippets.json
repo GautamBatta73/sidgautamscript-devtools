@@ -26,12 +26,21 @@
 	"Until Loop": {
 		"prefix": "until ()",
 		"body": [
-			"until (var ${1:i} = 0, ${1:i} < len(${2:array}), ${1:i} = i + 1) {",
+			"until (var ${1:i} = 0, ${1:i} < len(${2:array}), ${1:i} += 1) {",
 			"\tfinal ${3:element} = ${2:array}[${1:i}];",
 			"\t$0",
 			"}"
 		],
 		"description": "A custom until loop with index and element"
+	},
+	"Though Loop": {
+		"prefix": "though ()",
+		"body": [
+			"though (${1:condition}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A custom though loop"
 	},
 	"Function Declaration": {
 		"prefix": "func ()",
